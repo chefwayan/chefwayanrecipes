@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Contact</title>
+    
+    <style> 
+     
+         #menu {
+                width: 900px; height:30px; margin: auto; margin-top: -15px;
+                }
+        #buttonmenu {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 8px 8px;
+            font-family: Ariel, sans-serif;
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 2px 2px;
+            cursor: pointer;
+            }
+        
+        #buttonmenu:hover  {background-color: #333333;
+                        color: ghostwhite;
+                        font-size: 15px;
+                        }
+        
+        
+        
+        footer {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                background-color: #800020;
+                font-size: 12px;
+                color: white;
+                font-family: sans-serif;
+                text-align: center;
+            
+                }
+        
+        body {font-family:sans-serif;}
+        * {box-sizing: border-box;}
+
+        input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        }
+
+        input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+         input[type=reset] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=reset]:hover {
+        background-color: #45a049;
+        }
+
+        .container {
+                width: 650px;
+                margin: auto;
+                border-radius: 5px;
+                background-color:	 #d9d9d9;
+                padding: 20px;
+                color: #333333;
+            
+        }
+      
+        </style>
+    
+</head>
+    
+<body  style="background-color:#FDFEFF">
+    
+    <div style="position: sticky; top: 0; background-color: #FDFEFF">
+        <div  style= "width: 900px; margin: auto">
+                    <a style=" margin:auto; display: block; text-align: center" href="index.html">
+                    <img src="image/logo1.png" style="width:188px;height:188px; box-shadow: 5px 5px 10px #363636;"></a>
+        </div>
+        
+        <div id="menu">     
+            <a  href="index.html"><button id="buttonmenu">HOME</button></a>
+            <a  href="recipes.html"><button id="buttonmenu">MY RECIPE</button></a>
+            <a  href="contact.html"><button id="buttonmenu">CONTACT</button></a>                          
+         </div>
+         
+        <div style="margin-top: 0px;">
+            <hr color="daa520">
+        </div>
+    </div>
+    
+    <div style="text-align: center;margin-top: 20px;">
+        <img src="image/sushi.png" alt="sate" style="width: 500px; margin-bottom: 0px; box-shadow: 5px 5px 10px #888888">
+    
+    </div>
+    
+    
+    
+    <h2 style="text-align:center; padding-top:25px; font-family: sans-serif; color: #333333;">Contact Form</h2>
+
+    <div class="container" style="margin-bottom: 100px;">
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <label for="fname">First Name</label>
+            <input type="hidden" name="access_key" value="39473ffa-040b-46e3-a835-709257a3f037">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+        <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email address.." required>
+
+        <label for="subject">Cooking Question?</label>
+            <textarea id="subject" name="subject" placeholder="Write your question here.." style="height:175px; font-family: sans-serif;"></textarea>
+
+        <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+    
+    
+    
+    
+    <div style= "margin: auto; margin-top: 50px;">
+        <footer>
+            <p>Copyright &copy; 2024 CHEF WS</p>
+        </footer>
+    </div>    
+</body>
+    
+
+</html>
