@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href= "index.style.css">  
-<title>WS Home</title>
+<title>Home</title>
     
 <style> 
     
@@ -15,27 +15,43 @@
 </head>
 <body>
 <!-- Header/banner start here -->    
+<div id="div_sticky">
 <div id="div_header">
     <div id="div_logo">
         <img id="div_logo_img" src="image/logo1.png">
     </div>
 </div>
+
+<!-- Menu for mobile -->  
+<div class="dropdown_menu">
+    <button class="dropdown_button">Menu</button>
+    <div class="dropdown_content">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">My Recipe</a>
+    <a href="contact.html">Contact</a>
+    </div>
+</div>    
     
+    
+    
+<!-- Menu for tablet/ipad air/desktop -->  
 <div id="div_menu">     
         <a  href="index.html"><button id="buttonmenu">HOME</button></a>
         <a  href="recipes.html"><button id="buttonmenu">MY RECIPE</button></a>
         <a  href="contact.html"><button id="buttonmenu">CONTACT</button></a>                          
 </div>
 
+</div>
+    
 <!-- Photos for mobile --> 
 <div id="div_mobile_photo">
     <img src="image/scallop.png" alt:"scallops" style=" width:125px;margin:auto; padding: 2px;">
     <img src="image/beef.png" alt:"salad" style=" width:125px;margin:auto; padding: 2px;">
 </div>  
-    
+
+
 <!-- Four photos here --> 
 <div id = "div_photo">
-
     <img src="image/beef.png" alt:"Beef" style=" width:185px;margin:auto; padding: 2px;">
     <img src="image/salad.png" alt:"salad" style=" width:185px;margin:auto; padding: 2px;">
     <img src="image/scallop.png" alt:"scallops" style=" width:185px;margin:auto; padding: 2px;">
