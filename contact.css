@@ -196,11 +196,6 @@ input[type=reset]:hover {
             }
 
 
-#div_bottom {
-    width: 50%;
-    padding: 20px;
-    margin-bottom: 10px;
-}
 
 footer {
     margin: auto;
@@ -250,7 +245,7 @@ footer {
 
 #div_menu {
     display: block;
-    width: 80%; 
+    width: 90%; 
     height:30px; 
     margin: auto; 
     margin-top: 0;
@@ -352,11 +347,7 @@ footer {
             font-family: Ariel, sans-serif; 
             font-size: 16px;
             }
-#div_bottom {
-    width: 50%;
-    padding: 20px;
-    margin-bottom: 10px;
-}
+
 
 footer {
     margin: auto;
