@@ -319,6 +319,16 @@ footer {
     margin-bottom: 20px;
 }
 
+#div_follow {
+    width: 100%;
+    margin: auto;  
+}
+#follow {
+    text-align: center;
+    font-family: Ariel, sans-serif;
+    padding: 10px;
+      color: #333333; 
+}
 #div_social {
     width:100%; 
     text-align: center;
@@ -455,6 +465,16 @@ footer {
     margin-bottom: 20px;
 }
 
+#div_follow {
+    width: 100%;
+    margin: auto;  
+}
+#follow {
+    text-align: center;
+    font-family: Ariel, sans-serif;
+    padding: 10px;
+      color: #333333; 
+}
 #div_social {
     width:100%; 
     text-align: center;
