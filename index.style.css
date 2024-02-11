@@ -173,6 +173,27 @@
     margin-bottom: 20px;
 }
 
+#div_month {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 4px;
+}
+#div_month h4 {
+    font-family: Ariel, sans-serif;
+    padding: 3px;
+}
+#div_month a {
+    text-decoration: none;
+      color: #333333; 
+}
+
+#div_month h4:hover {
+    color: #daa520;
+    font-size: 20px;
+}
+
 #div_follow {
     width: 100%;
     margin: auto;  
