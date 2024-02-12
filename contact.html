@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href= "contact.css">  
+<title>WS Contact</title>
+    
+<style> 
+</style>
+    
+    
+</head>
+<body>
+<!-- Header/banner start here -->    
+<div id="div_sticky">
+<div id="div_header">
+    <div id="div_logo">
+        <img id="div_logo_img" src="image/logo1.png">
+    </div>
+</div>
+
+<!-- Menu for mobile -->  
+<div class="dropdown_menu">
+    <button class="dropdown_button">Menu</button>
+    <div class="dropdown_content">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">My Recipe</a>
+    <a href="contact.html">Contact</a>
+    </div>
+</div>    
+    
+    
+    
+<!-- Menu for tablet/ipad air/desktop -->  
+<div id="div_menu">     
+        <a  href="index.html"><button id="buttonmenu">HOME</button></a>
+        <a  href="recipes.html"><button id="buttonmenu">RECIPE</button></a>
+        <a  href="contact.html"><button id="buttonmenu">CONTACT</button></a>                          
+</div>
+
+</div> <!-- Closing sticky --> 
+    
+<!-- Photo start here -->
+<div id="div_sushi_img">
+    <img src="image/sushi.png" alt="sushi">
+</div> 
+
+<!-- Contact form start here -->
+<h2 id="form_h2">Contact Form</h2>
+<div id="container">
+    <form action="https://api.web3forms.com/submit" method="POST">
+    <label for="fname">First Name</label>
+        <input type="hidden" name="access_key" value="39473ffa-040b-46e3-a835-709257a3f037">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+
+    <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email address.." required>
+
+    <label for="subject">Cooking Question?</label>
+        <textarea id="subject" name="subject" placeholder="Write your question here.." style="height:175px; font-family: sans-serif;"></textarea>
+
+    <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+</div>
+
+    
+<!-- Footer start here --> 
+<footer>
+    <p>Copyright &copy; 2024 CHEF WS</p>
+</footer>  
+
+<!-- End! -->   
+</body>
+    
+    
+</html>
