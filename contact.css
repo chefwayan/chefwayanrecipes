@@ -26,6 +26,7 @@
 
 #div_logo_img {
     width:110px;
+    height: 110px;
     box-shadow: 5px 5px 10px #363636;
  
 }
@@ -295,6 +296,28 @@ footer {
 /* For laptop/desktop */
 @media only screen and (min-width: 1000px) {
 
+ #div_header {
+    background-color:#FDFEFF;
+    display: block;
+    margin: auto; 
+    text-align: center;
+    width: 100%; 
+    height:170px;
+}
+    
+ #div_logo {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+#div_logo_img {
+    width:160px;
+    height:160px; 
+    box-shadow: 5px 5px 10px #363636;
+}
+
 #div_menu {
     width: 50%; 
     height:30px; 
@@ -303,9 +326,10 @@ footer {
     border-bottom-color: #daa520;
     border-bottom-style: solid;
     background-color:#FDFEFF; 
-    margin-top: -15px;
+    margin-top: -30px;
     padding: 5px;
     text-align: left;
+   
 }
 
 #buttonmenu {
@@ -326,6 +350,7 @@ footer {
     color: ghostwhite;
     font-size: 16px;
 }
+
 #div_sushi_img img {
     width: 500px;
     margin-bottom: 0px;
