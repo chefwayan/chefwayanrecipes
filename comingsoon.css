@@ -89,6 +89,7 @@
 
 
 
+
 /* Menu for desktop*/
 #div_menu {
     display: none;
@@ -267,42 +268,31 @@ footer {
 
 /* For laptop/desktop */
 @media only screen and (min-width: 1000px) {
- #div_menu {
-    width: 50%; 
-    height:30px; 
-    margin: auto; 
-    margin-top: 0;
-    border-bottom-color: #daa520;
-    border-bottom-style: solid;
-    background-color:#FDFEFF; 
-    margin-top: -15px;
-    padding: 5px;
-    text-align: left;
-}
-    
-#buttonmenu {
-    color: black;
-    background-color: #FDFEFF;
-    border: none;
-    padding: 8px 8px;
-    font-family: Ariel, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    margin: 2px 2px;
-    cursor: pointer;
-}
-        
-#buttonmenu:hover {
-    background-color: #daa520;
-    color: ghostwhite;
-    font-size: 16px;
-}
-
-.dropdown_menu {
+ .dropdown_menu {
     display: none;
 }
+  #div_header {
+    background-color:#FDFEFF;
+    display: block;
+    margin: auto; 
+    text-align: center;
+    width: 100%; 
+    height:170px;
+}
     
+ #div_logo {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+#div_logo_img {
+    width:160px;
+    height:160px; 
+    box-shadow: 5px 5px 10px #363636;
+}
+
 #div_menu {
     width: 50%; 
     height:30px; 
@@ -311,10 +301,10 @@ footer {
     border-bottom-color: #daa520;
     border-bottom-style: solid;
     background-color:#FDFEFF; 
-    margin-top: -15px;
+    margin-top: -30px;
     padding: 5px;
     text-align: left;
-  
+   
 }
 
 #buttonmenu {
@@ -335,7 +325,6 @@ footer {
     color: ghostwhite;
     font-size: 16px;
 }
-
     
 #bookshelf_img {
    margin-top: 15px;
