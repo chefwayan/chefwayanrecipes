@@ -14,7 +14,7 @@
     display: block;
     margin: auto; 
     width: 100%; 
-    height:130px;
+    height:122px;
  
 }
 #div_logo {
@@ -27,8 +27,8 @@
 }
 
 #div_logo_img {
-    width:120px;
-    height:120px; 
+    width:110px;
+    height:110px; 
     box-shadow: 5px 5px 10px #363636;
  
 }
@@ -50,10 +50,9 @@
     display:inline-block;
     width: 110%;
     background-color:white;
-    margin-top: -5px;
+    margin-top: -7px;
     border-bottom: 1px solid #daa520;
     margin-bottom: 15px;
-    
 }
 
 .dropdown_content {
@@ -292,7 +291,6 @@ footer {
 /* For tablet/ipad air */
 @media only screen and (min-width: 768px) {
      #div_header {
-   
     background-color:#FDFEFF;
     display: block;
     margin: auto; 
@@ -467,6 +465,32 @@ footer {
 /* For laptop/desktop */
 @media only screen and (min-width: 1000px) {
 
+.dropdown_menu {
+    display: none;
+} 
+    
+#div_header {
+    background-color:#FDFEFF;
+    display: block;
+    margin: auto; 
+    text-align: center;
+    width: 100%; 
+    height:170px;
+}
+    
+ #div_logo {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+#div_logo_img {
+    width:160px;
+    height:160px; 
+    box-shadow: 5px 5px 10px #363636;
+}
+
 #div_menu {
     width: 50%; 
     height:30px; 
@@ -480,7 +504,7 @@ footer {
     text-align: left;
    
 }
-    
+
 #buttonmenu {
     color: black;
     background-color: #FDFEFF;
