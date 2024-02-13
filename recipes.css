@@ -160,7 +160,6 @@
     width: 100%; 
     margin: auto;
     margin-top: 0px;
-    margin-left: 10px;
     margin-bottom: 0; 
     background-color: #F4F1DE; 
     border-radius: 0px;
@@ -273,7 +272,6 @@ footer {
     overflow: hidden;
     width: 100%;
     margin: auto;
-    margin-left: 10px;
     margin-top: 10px;
 
 }
