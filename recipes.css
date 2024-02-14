@@ -282,7 +282,7 @@ footer {
     from{
         transform: translateX(0);
     }to{
-        transform: translateX(calc(-241px * 6.9));
+        transform: translateX(calc(-241px * 6.7));
     }
 }
 
