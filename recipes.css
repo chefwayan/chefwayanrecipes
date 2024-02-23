@@ -1,6 +1,3 @@
-/* For tablet/ipad air */
-@media only screen and (min-width: 430px) {
-    
 
 * {
     margin: 0;
@@ -372,8 +369,7 @@ footer {
         transform: translateX(calc(-241px * 6.7));
     }
 }
-*/
-}    
+*/ 
     
 /* For tablet/ipad air */
 @media only screen and (min-width: 768px) 
