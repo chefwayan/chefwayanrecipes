@@ -1,11 +1,14 @@
+
 * {
     margin: 0;
     padding: 0;
 }
 
 #div_sticky {
- 
-    position: sticky; top: 0;
+    position: sticky; 
+    top: 0;
+    margin: 0;
+    z-index: 1;
 }
 
 #div_header {
@@ -14,18 +17,19 @@
     margin: auto; 
     width: 100%; 
     height:122px;
- 
+  
 }
 #div_logo {
     width: 100%;
     margin: auto;
+    margin-left: 0;
     margin-top: 15px;
     text-align: center;
     background-color:#FDFEFF;
 }
 
 #div_logo_img {
-    width:110px;
+    width:100px;
     box-shadow: 5px 5px 10px #363636;
  
 }
@@ -47,7 +51,7 @@
     display:inline-block;
     width: 100%;
     background-color:white;
-    margin-top: -7px;
+    margin-top: -8px;
     border-bottom: 1px solid #daa520;
     margin-bottom: 15px;
     
@@ -88,7 +92,6 @@
 /* Menu for mobile end */
 
 
-
 /* Menu for desktop*/
 #div_menu {
     display: none;
@@ -124,7 +127,7 @@
 }
 
 #div_mobile_photo {
-    width: 100%;
+    width: 95%;
     text-align: center;
     padding: 5px;
 }
@@ -165,10 +168,11 @@
 }
 
 #div_paypal {
-    width: 100%;
+    width: 94%;
     text-align: center; 
     padding: 10px;
     margin-bottom: 20px;
+    margin-left: 0;
 }
 
 #div_month {
@@ -180,22 +184,38 @@
 }
 #div_month h4 {
     font-family: Ariel, sans-serif;
-    padding: 3px;
+    padding: 12px;
+    background-color: #4d4d4d;
+    color: white;
+    width: 120px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 #div_month a {
     text-decoration: none;
-      color: #333333; 
+    color
+}
+#div_month h3 {
+    font-family: Ariel, sans-serif;
+    padding: 3px;
+     color: #333333; 
 }
 
 #div_month h4:hover {
-    color: #daa520;
-    font-size: 20px;
+    background-color: #262626;
 }
 
+#div_month p {
+    font-family: Ariel, sans-serif;
+      color: #333333; 
+}
 
 #div_follow {
-    width: 100%;
-    margin: auto;  
+    width: 94%;
+    margin: auto;
+    text-align: center;
 }
 #follow {
     text-align: center;
@@ -204,7 +224,7 @@
       color: #333333; 
 }
 #div_social {
-    width:100%; 
+    width:96%; 
     text-align: center;
 }
 
@@ -218,7 +238,7 @@ footer {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 85%;
     padding: 20px;
     background-color: #800020;
     font-size: 12px;
@@ -362,8 +382,6 @@ footer {
     font-family: sans-serif;
     text-align: center;
 }
-
-
 }
 
 /* For laptop/desktop */
@@ -492,7 +510,7 @@ footer {
     margin-bottom: 10px;
     width: 50%;
     padding: 20px;
-    background-color: #800020;
+    background-color:#800020; 
     font-size: 12px;
     color: white;
     font-family: sans-serif;
