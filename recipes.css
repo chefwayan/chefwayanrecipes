@@ -1,3 +1,7 @@
+/* For tablet/ipad air */
+@media only screen and (min-width: 430px) {
+    
+
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +30,7 @@
 }
 
 #div_logo_img {
-    width:110px;
+    width:100px;
     box-shadow: 5px 5px 10px #363636;
  
 }
@@ -126,11 +130,11 @@
 }
 
 #note {
-    width: 100%; 
+    width: 95%; 
     text-align: left; 
-    padding: 10px; 
+    padding: 0px; 
     margin: auto; 
-    margin-top: 0px; 
+    margin-top: 0px;
     color: #262626; 
     font-family: Ariel, sans-serif;
     }
@@ -140,11 +144,12 @@
     margin: auto; 
     margin-left: 0;
     text-align: center; 
-    width: 370px; 
+    width: 97%; 
     height: 155px; 
     padding: 5px; 
     margin-bottom: 0px;
     font-family: Ariel, sans-serif;
+     
     }
  
 #sec_1 {
@@ -168,7 +173,7 @@
     }
    
 #box img {
-     width: 180px;  
+     width: 200px;  
     }
 
 #box a {
@@ -186,7 +191,7 @@
     }
     
 #request {
-    width: 640px; 
+    width: 100%; 
     text-align: left; 
     margin: auto; 
     margin-top: 15px; 
@@ -199,6 +204,7 @@
     background-color: #404040;
     color: white;
     padding: 10px;
+    margin-left: 5px;
     border: none;
     text-decoration: none;
     }
@@ -212,7 +218,7 @@ footer {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 10px;
-    width: 100%;
+    width: 85%;
     padding: 20px;
     background-color: #800020;
     font-size: 12px;
@@ -367,7 +373,7 @@ footer {
     }
 }
 */
-    
+}    
     
 /* For tablet/ipad air */
 @media only screen and (min-width: 768px) 
