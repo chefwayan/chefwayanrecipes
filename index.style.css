@@ -16,6 +16,7 @@
     font-family: Ariel, sans-serif;
     margin-bottom: 0;
     margin-left: 0;
+
     }
     
 #top_photo img {
@@ -32,6 +33,7 @@
 #heading {
     font-size: 22px;
     font-weight: bold;
+    
 }
 
 #head_pro {
@@ -125,6 +127,7 @@ hr {
     margin-bottom: 20px;
     height: 520px;
     box-shadow: 5px 5px 10px  #f2f2f2;
+ 
 }
 
 #bio_img {
@@ -243,7 +246,12 @@ footer {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen 
+    and (min-device-width: 678px) 
+    and (max-device-width: 678px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
 
 *{
     margin: 0;
@@ -358,14 +366,12 @@ footer {
     background-color:#1a1a1a;
     width: 100%;
 }
-
-    
+  
 }
+   
 
-
-
-
-@media only screen and (min-width: 1000px) {
+/*---- Desktop ----*/
+@media only screen and (min-width: 1025px) {
 
 *{
     margin: 0;
@@ -393,6 +399,7 @@ footer {
     font-family: Ariel, sans-serif;
     color: white;
    width: 100%;
+   
     }
 #top_photo img {
     width: 100%;
@@ -402,14 +409,12 @@ footer {
     position: absolute;
     top: 65%;
     left: 30%;
-   
 }  
 
 #heading {
     font-size: 48px;
     font-weight: bold;
     font-family: Ariel, sans-serif;
-
 }
 
 #head_pro {
@@ -586,7 +591,7 @@ footer {
     margin: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    width: 100%;
+    width: 98%;
     padding: 20px;
     background-color:#800020; 
     font-size: 12px;
@@ -594,9 +599,42 @@ footer {
     font-family: sans-serif;
     text-align: center;
 }
+
 }
 
 
+/* ----------- Non-Retina Screens laptop ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      
+#center {
+    position: absolute;
+    top: 60%;
+    left: 18%;
+}     
+
+#container {
+    width: 50%;
+      }
+
+#bio {
+    width: 100%;  
+      }
+
+footer {
+    width: 97%;
+}
+
+}
+
+
+
+
+
+
+/* ----- iPad Pro landscape ---- */
 @media only screen 
     and (min-device-width: 1366px) 
     and (max-device-width: 1366px) 
@@ -606,7 +644,7 @@ footer {
 #center {
     position: absolute;
     top: 65%;
-    left: 24%;
+    left: 22%;
 }  
 
 #container {
@@ -658,7 +696,9 @@ footer {
     padding: 10px;
     margin-bottom: 20px;
 }
-    
+       
+        
+        
 footer {
     margin: auto;
     margin-top: 0px;
@@ -672,10 +712,4 @@ footer {
     text-align: center;
 }
 }
-
-
-
-
-
-
 
