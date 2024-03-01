@@ -199,7 +199,6 @@ hr {
 
 #div_month img {
     width: 350px;
-    box-shadow: 5px 5px 10px  #cccccc;
     border-radius: 5px;
     margin:auto; 
     padding: 2px;
@@ -550,7 +549,6 @@ hr {
 
 #div_month img {
     width: 500px;
-    box-shadow: 5px 5px 10px  #cccccc;
     border-radius: 5px;
     margin:auto; 
     padding: 2px;
