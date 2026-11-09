@@ -1,104 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href= "index.style.css">  
-<title>WS Home</title>
-    
-<style>     
-</style>
-        
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="index.style.css" rel="stylesheet"/>
+<title>
+   WS Home
+  </title>
 </head>
 <body>
-
 <div id="top_photo">
-    <img src="image/banner.png.jpg" alt="spices">
-    <div id="center"><p><span id="heading">WAYAN SUTRIASA</span>
-        <br><span id="head_pro">Professional Chef</span>
-        </p>
-    </div>
+<img alt="Spices banner" src="image/banner.png.jpg"/>
+<div id="center">
+<p>
+<span id="heading">
+      WAYAN SUTRIASA
+     </span>
+<br/>
+<span id="head_pro">
+      Professional Chef
+     </span>
+</p>
+</div>
 </div>
 <div id="stop">
-<!-- Menu for mobile -->  
+<!-- Menu for mobile -->
 <div class="dropdown_menu">
-    <button class="dropdown_button">Menu</button>
-    <div class="dropdown_content">
-    <a href="index.html">Home</a>
-    <a href="recipes.html">Recipe</a>
-    <a href="contact.html">Contact</a>
-    </div>
-</div> 
-</div> 
-<!-- Menu for mobile end --> 
-
- <div id="sticky1"> 
-<div id="menu">
-    <a href="index.html"><button>HOME</button></a> 
-    <a href="recipes.html"><button>RECIPE</button></a> 
-   <a href="contact.html"><button>CONTACT</button></a> 
+<details class="mobile-nav">
+<summary>
+      Menu
+     </summary>
+<nav aria-label="Mobile navigation" class="dropdown_content">
+<a href="index.html">
+       Home
+      </a>
+<a href="recipes.html">
+       Recipe
+      </a>
+<a href="contact.html">
+       Contact
+      </a>
+</nav>
+</details>
 </div>
-<hr>
-</div>    
-
+</div>
+<!-- Menu for mobile end -->
+<div id="sticky1">
+<nav aria-label="Main navigation" id="menu">
+<a href="index.html">
+     HOME
+    </a>
+<a href="recipes.html">
+     RECIPE
+    </a>
+<a href="contact.html">
+     CONTACT
+    </a>
+</nav>
+<hr/>
+</div>
 <!-- Bio start here -->
 <div id="container">
-    <div id="logo">
-    <img src="image/logo1.png">
-    </div>
-    <div id= "bio">
-        <img id="bio_img" src="image/wayan.png" alt="Wayan sutriasa">
-        <p id="bio_p">
-            <span style="font-size: 14px; font-weight: bold;">Welcome, I’m Wayan.</span> <br><br>
-            I’ve been a chef for over 25 years, and can’t count the number of times someone has asked me for the recipes to their favorite dishes I’ve made. So, I created this website to share some of those recipes. But first, a little bit about me.
-            <br><br>
-            I was born and raised in Bali, Indonesia, where my passion for food was ignited by my mother’s cooking. In 1997, I graduated from the Epicurean School of Culinary Arts in Los Angeles, and have worked in catering, fine restaurants, hotels, and country clubs ever since. I am currently the Executive Chef at a prestigious country club on the East Coast of the U.S.
-            <br><br>
-            I created and coded this website myself, and am still working to make it a better experience for you. So for now, enjoy it and have fun! I hope my recipes boost your confidence as a chef, whether you’re cooking for yourself at home or for customers at a restaurant. If you would like to support my work, please consider clicking the Donate button below.
-            <br><br>
-            Eat Good and Be Happy...
-        </p>
-    </div>
+<div id="logo">
+<img alt="Chef WS logo" src="image/logo1.png"/>
 </div>
+<div id="bio">
+<img alt="Wayan sutriasa" id="bio_img" src="image/Chef.jpeg"/>
+<p id="bio_p">
+<span class="welcome-heading">
+      Welcome, I’m Wayan.
+     </span>
+<br/>
+<br/>
+     I’ve been a chef for over 25 years, and I’ve lost count of how many times people have asked me to share the recipes for their favorite dishes I’ve prepared. That’s what inspired me to create this website—a place where I can share my recipes, culinary experiences, and passion for cooking with you.
 
+     But first, let me tell you a little about myself.
+     <br/>
+<br/>
+     I was born and raised in Bali, Indonesia, where my love for cooking began in my mother’s kitchen. Her passion for food and the wonderful flavors of Balinese cuisine inspired me to pursue a career in the culinary arts.
 
-      <!-- Paypal button start here -->
-<div id ="div_paypal">
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="TDCS36RGA4TMJ" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-    </form>
-</div>  
+     In 1997, I graduated from the Epicurean School of Culinary Arts in Los Angeles. Since then, I’ve had the privilege of working in catering, fine dining restaurants, hotels, and private country clubs. Today, I serve as the Executive Chef at a prestigious country club on the East Coast of the United States.
+     <br/>
+<br/>
+    Beyond the kitchen, I also enjoy learning new skills and exploring technology. In fact, I designed and coded this website myself! I’m constantly working to improve it and make your experience even better.
 
+     My goal is simple: to share delicious recipes, inspire creativity, and help you build confidence in the kitchen—whether you’re preparing a meal for your family or cooking professionally in a restaurant.
+
+     If you enjoy my recipes and would like to support my work, please consider clicking the Donate button below. Your support means a lot and helps me continue sharing my culinary journey with you.
+
+     Thank you for visiting, and most importantly, have fun cooking!
+     <br/>
+<br/>
+    Eat Good and Be Happy...
+<br/>
+— Chef Wayan
+    </p>
+</div>
+</div>
+<!-- Paypal button start here -->
+<div id="div_paypal">
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input name="hosted_button_id" type="hidden" value="TDCS36RGA4TMJ"/>
+<input alt="Donate with PayPal button" border="0" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" title="PayPal - The safer, easier way to pay online!" type="image"/>
+<img alt="" height="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1"/>
+</form>
+</div>
 <div id="bottom">
 <div id="div_month">
-    <h3>What's new this month?</h3> 
-    <a href="recipes.html"><h4>View Recipe</h4></a>
-    <a href="recipes.html"><img src="image2/scallops.png" alt:"scallops"></a>
-    <p>Pan seared sea scallops.</p>
+<h3>
+     What's new this month?
+    </h3>
+<a href="recipes.html">
+<h4>
+      View Recipe
+     </h4>
+</a>
+<a href="recipes.html">
+<img alt="Pan-seared sea scallops" src="image2/scallops.png"/>
+</a>
+<p>
+     Pan seared sea scallops.
+    </p>
 </div>
-
-<br><br>
+<br/>
+<br/>
 <!-- Facebook and Instagram start here -->
 <div id="div_follow">
-    <h5 id="follow">Follow me:</h5>
+<h5 id="follow">
+     Follow me:
+    </h5>
 </div>
-<div id = "div_social" > 
-    <a href="https://www.facebook.com/profile.php?id=61556333451263" target="_blank"><img src="image/facebook.png" style="width: 50px"></a>
-    <a href="https://www.instagram.com/chefsutriasa/" target="_blank"><img src="image/instagram.png" style="width: 50px"></a>
+<div id="div_social">
+<a href="https://www.facebook.com/profile.php?id=61556333451263" rel="noopener noreferrer" target="_blank">
+<img alt="Facebook" class="social-icon" src="image/facebook.png"/>
+</a>
+<a href="https://www.instagram.com/chefsutriasa/" rel="noopener noreferrer" target="_blank">
+<img alt="Instagram" class="social-icon" src="image/instagram.png"/>
+</a>
 </div>
-
 </div>
-    
-<!-- Footer start here --> 
+<!-- Footer start here -->
 <footer>
-    <p id="bottom_p">Copyright &copy; 2024 CHEF WS</p>
-</footer>  
-
-<!-- End! -->   
+<p id="bottom_p">
+    Copyright © 2026 CHEF WS
+   </p>
+</footer>
+<!-- End! -->
 </body>
-    
-    
 </html>
