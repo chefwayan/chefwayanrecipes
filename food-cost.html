@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free food cost and menu selling price calculator by Chef WS Kitchen.">
+  <title>Food Cost Calculator | Chef WS Kitchen</title>
+  <link rel="stylesheet" href="food-cost.css">
+  <script src="food-cost.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Chef WS home"><img src="image/logo1.png" alt="Chef WS logo"></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">HOME</a><a href="recipes.html">RECIPES</a><a href="food-cost.html" aria-current="page">FOOD COST CALCULATOR</a><a href="conversion.html">CONVERSIONS</a><a href="contact.html">CONTACT</a>
+    </nav>
+    <details class="mobile-nav"><summary>MENU</summary><nav aria-label="Mobile navigation"><a href="index.html">HOME</a><a href="recipes.html">RECIPES</a><a href="food-cost.html" aria-current="page">FOOD COST CALCULATOR</a><a href="conversion.html">CONVERSIONS</a><a href="contact.html">CONTACT</a></nav></details>
+  </header>
+  <main class="container">
+    <div class="intro"><p class="eyebrow">FREE KITCHEN TOOL</p><h1>Food Cost Calculator</h1><p>Enter the costs for one recipe or portion, then choose your target food cost percentage to calculate a suggested selling price.</p></div>
+    <section class="panel" aria-labelledby="ingredients-heading">
+      <div class="section-head"><h2 id="ingredients-heading">Ingredients</h2><button id="add-ingredient" class="button secondary" type="button">+ Add ingredient</button></div>
+      <div id="ingredients" class="ingredients"></div>
+      <div class="two-col">
+        <div class="field"><label for="servings">Recipe servings</label><input id="servings" type="number" min="1" step="1" value="1" inputmode="numeric"><small>Use 1 if your ingredient costs are already per portion.</small></div>
+        <div class="field"><label for="target">Target food cost (%)</label><input id="target" type="number" min="0.01" max="100" step="0.01" value="38" inputmode="decimal"></div>
+      </div>
+      <p id="error" class="error" role="alert" hidden></p>
+    </section>
+    <section class="results" aria-labelledby="results-heading"><h2 id="results-heading">Your Results</h2>
+      <div class="result-grid">
+        <div class="result"><span>Total recipe cost</span><strong id="total-cost">$0.00</strong></div>
+        <div class="result"><span>Cost per serving</span><strong id="portion-cost">$0.00</strong></div>
+        <div class="result featured"><span>Suggested selling price / serving</span><strong id="selling-price">$0.00</strong></div>
+        <div class="result"><span>Gross profit / serving</span><strong id="gross-profit">$0.00</strong></div>
+      </div>
+      <p class="note">Suggested price = cost per serving ÷ (target food cost percentage ÷ 100). Gross profit shown is before labor, overhead, taxes, and other expenses.</p>
+      <div class="actions"><button class="button secondary" type="button" id="reset">Reset calculator</button><button class="button primary" type="button" id="print">Print results</button></div>
+    </section>
+  </main>
+  <footer>Copyright © <span id="year">2026</span> CHEF_WAYAN_SUTRIASA</footer>
+</body>
+</html>

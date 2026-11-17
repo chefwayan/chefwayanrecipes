@@ -1,0 +1,91 @@
+/* Chef WS: original gold, burgundy, and charcoal design; responsive fixes */
+:root { --gold: #daa520; --burgundy: #800020; --charcoal: #1a1a1a; }
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #333; }
+img { max-width: 100%; height: auto; }
+a { color: inherit; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--burgundy); outline-offset: 3px; }
+
+/* Spice banner */
+#top_photo { position: relative; width: 100%; color: white; text-align: center; }
+#top_photo > img { display: block; width: 100%; height: auto; }
+#center { position: absolute; top: 45%; left: 8%; text-align: left; text-shadow: 0 2px 6px rgba(0,0,0,.65); }
+#center p { margin: 0; }
+#heading { font-size: clamp(20px, 4vw, 48px); font-weight: 700; }
+#head_pro { font-size: clamp(14px, 2.5vw, 32px); font-weight: 700; }
+
+/* Mobile navigation: details/summary supports touch and keyboard */
+#stop { position: sticky; top: 0; z-index: 20; }
+.dropdown_menu { background: transparent; }
+.mobile-nav { position: relative; display: inline-block; }
+.mobile-nav summary { display: block; cursor: pointer; list-style: none; padding: 12px 18px; background: var(--gold); color: white; font-size: 17px; }
+.mobile-nav summary::-webkit-details-marker { display: none; }
+.dropdown_content { position: absolute; top: 100%; left: 0; min-width: 175px; background: var(--gold); box-shadow: 0 8px 16px rgba(0,0,0,.25); }
+.dropdown_content a { display: block; padding: 12px 16px; color: white; text-decoration: none; }
+.dropdown_content a:hover, .dropdown_content a:focus-visible { background: #b8860b; }
+#sticky1 { display: none; }
+#menu { display: flex; justify-content: center; gap: 12px; background: white; }
+#menu a { display: inline-block; padding: 12px 16px; font-size: 15px; font-weight: bold; text-decoration: none; color: #404040; }
+#menu a:hover, #menu a:focus-visible { background: var(--gold); color: white; }
+#sticky1 hr { margin: 0; border: 0; border-top: 1px solid #ddd; }
+
+/* Biography */
+#container { display: flex; align-items: flex-start; gap: 20px; width: min(94%, 960px); margin: 25px auto; padding: 4px; }
+#logo { flex: 0 0 18%; }
+#logo img { display: none; width: 100%; box-shadow: 5px 10px 8px #d9d9d9; }
+#bio { flex: 1; min-width: 0; padding: 12px; box-shadow: 5px 5px 10px #f2f2f2; }
+#bio_img { float: left; width: 145px; padding: 0 20px 12px 0; }
+#bio_p { margin: 0; font-size: 14px; line-height: 1.6; word-spacing: 2px; }
+.welcome-heading { font-size: 20px; font-weight: bold; }
+
+/* Donation */
+#div_paypal { width: min(94%, 960px); margin: 12px auto 25px; padding: 10px; text-align: center; }
+#div_paypal form { display: inline-block; }
+
+/* Featured recipe and social links */
+#bottom { width: 100%; background: var(--charcoal); color: white; padding: 24px 12px 30px; text-align: center; }
+#div_month { width: min(100%, 720px); margin: auto; }
+#div_month h3 { margin: 0 0 14px; }
+#div_month a { text-decoration: none; }
+#div_month h4 { width: max-content; margin: 8px auto 12px; padding: 12px 20px; border-radius: 5px; background: var(--gold); color: white; }
+#div_month h4:hover { background: #b8860b; }
+#div_month img { display: block; width: min(100%, 500px); margin: auto; border-radius: 5px; }
+#div_month p { margin: 10px 0 24px; font-size: 16px; }
+#div_follow, #div_social { width: min(100%, 720px); margin: auto; }
+#follow { margin: 0 0 8px; font-size: 14px; }
+#div_social { display: flex; justify-content: center; gap: 12px; }
+.social-icon { width: 50px; height: auto; }
+footer { width: 100%; padding: 20px; background: var(--burgundy); color: white; font-size: 12px; text-align: center; }
+footer p { margin: 0; }
+
+@media (min-width: 768px) {
+  #logo img { display: block; }
+  #container { margin-top: 60px; }
+  #div_paypal { text-align: left; }
+  #div_follow, #div_social { text-align: left; }
+  #div_social { justify-content: flex-start; }
+}
+@media (min-width: 1025px) {
+  #stop { display: none; }
+  #sticky1 { display: block; position: sticky; top: 0; z-index: 20; background: white; }
+  #center { top: 60%; left: 18%; }
+}
+@media (max-width: 767px) {
+  #container { display: block; }
+  #logo { display: none; }
+  #bio { width: 100%; }
+  #bio_img { width: 130px; }
+  #bio_p { font-size: 15px; }
+  #div_paypal { text-align: center; }
+}
+@media (max-width: 380px) {
+  #bio_img { width: 105px; padding-right: 12px; }
+  #center { left: 5%; top: 35%; }
+}
+
+/* Keep navigation visible on tablets */
+@media (min-width:768px) and (max-width:1024px) { #stop { display:block; } #sticky1 { display:none; } }
+
+/* Allow additional conversion link to wrap on smaller desktops */
+.desktop-nav { flex-wrap: wrap; }

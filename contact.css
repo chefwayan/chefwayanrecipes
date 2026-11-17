@@ -1,0 +1,41 @@
+/* Chef WS contact page — responsive styles */
+:root { --gold: #daa520; --burgundy: #800020; --text: #333; --border: #d3d3d3; }
+*, *::before, *::after { box-sizing: border-box; }
+html { font-family: Arial, sans-serif; }
+body { margin: 0; color: var(--text); background: #fdfeff; }
+img { max-width: 100%; height: auto; }
+a:focus-visible, summary:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visible { outline: 3px solid var(--burgundy); outline-offset: 3px; }
+.site-header { position: sticky; top: 0; z-index: 20; background: #fdfeff; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.brand { text-align: center; padding: 10px 12px; }
+.brand img { display: block; width: 100px; margin: auto; box-shadow: 5px 5px 10px #363636; }
+.desktop-nav { display: none; justify-content: center; gap: 6px; border-bottom: 2px solid var(--gold); }
+.desktop-nav a { display: inline-block; padding: 12px 18px; color: var(--text); text-decoration: none; font-weight: bold; text-transform: uppercase; }
+.desktop-nav a:hover, .desktop-nav a[aria-current="page"] { background: var(--gold); color: #fff; }
+.mobile-nav { border-bottom: 2px solid var(--gold); }
+.mobile-nav details { position: relative; }
+.mobile-nav summary { display: inline-block; cursor: pointer; padding: 12px 18px; color: #fff; background: var(--gold); font-weight: bold; list-style: none; }
+.mobile-nav summary::-webkit-details-marker { display: none; }
+.mobile-links { position: absolute; top: 100%; left: 0; min-width: 180px; background: var(--gold); box-shadow: 0 8px 16px rgba(0,0,0,.2); }
+.mobile-links a { display: block; padding: 13px 18px; color: #fff; text-decoration: none; }
+.mobile-links a:hover, .mobile-links a[aria-current="page"] { background: #a67c00; }
+.content { width: min(100% - 32px, 760px); margin: 24px auto 50px; }
+.photo-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 16px; margin: 0 auto 28px; }
+.photo-row img { width: min(100%, 210px); max-height: 230px; object-fit: contain; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+.contact-section h1 { text-align: center; font-size: clamp(24px, 4vw, 30px); margin: 0 0 8px; }
+.intro { text-align: center; line-height: 1.5; margin: 0 0 20px; }
+.contact-form { width: 100%; padding: clamp(18px, 4vw, 30px); border: 1px solid var(--border); border-radius: 8px; background: #f2f2f2; }
+.contact-form label { display: block; margin-bottom: 6px; font-weight: bold; }
+.contact-form input:not([type="hidden"]), .contact-form textarea { display: block; width: 100%; padding: 12px; margin-bottom: 18px; border: 1px solid #aaa; border-radius: 5px; background: #fff; color: var(--text); font: inherit; }
+.contact-form textarea { resize: vertical; min-height: 150px; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.form-actions button { border: 0; border-radius: 5px; padding: 12px 24px; color: #fff; background: var(--burgundy); font: inherit; font-weight: bold; cursor: pointer; }
+.form-actions button:hover { background: #590016; }
+.form-actions .secondary { background: #555; }
+.form-actions .secondary:hover { background: #333; }
+footer { width: 100%; background: var(--burgundy); color: #fff; text-align: center; padding: 22px 16px; font-size: 13px; }
+footer p { margin: 0; }
+@media (min-width: 768px) { .brand img { width: 160px; } .desktop-nav { display: flex; } .mobile-nav { display: none; } .content { margin-top: 36px; } .photo-row img { width: 230px; } }
+@media (max-width: 480px) { .photo-row img { width: calc(50% - 8px); } .form-actions button { flex: 1; } }
+
+/* Allow additional conversion link to wrap on smaller desktops */
+.desktop-nav { flex-wrap: wrap; }
