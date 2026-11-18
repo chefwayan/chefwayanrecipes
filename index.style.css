@@ -32,8 +32,9 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--burgundy); out
 
 /* Biography */
 #container { display: flex; align-items: flex-start; gap: 20px; width: min(94%, 960px); margin: 25px auto; padding: 4px; }
-#logo { flex: 0 0 18%; }
-#logo img { display: none; width: 100%; box-shadow: 5px 10px 8px #d9d9d9; }
+#logo { flex: 0 0 23%; min-width: 0; }
+
+#logo img { display: block; width: 90%; height: auto; box-shadow: 5px 10px 8px #d9d9d9; }
 #bio { flex: 1; min-width: 0; padding: 12px; box-shadow: 5px 5px 10px #f2f2f2; }
 #bio_img { float: left; width: 145px; padding: 0 20px 12px 0; }
 #bio_p { margin: 0; font-size: 14px; line-height: 1.6; word-spacing: 2px; }
