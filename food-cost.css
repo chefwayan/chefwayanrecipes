@@ -16,3 +16,45 @@
 .site-header .desktop-nav a, .site-header .mobile-nav nav a { text-transform: uppercase; letter-spacing: .5px; }
 @media (min-width: 768px) { .site-header .brand img { width: 150px; } }
 @media (max-width: 760px) { .site-header { align-items: stretch; } .site-header .brand { align-self: center; } .site-header .mobile-nav { align-self: flex-start; } }
+
+
+/* Mobile navigation directly below the logo and ABOVE the gold divider.
+   The entire menu row sticks to the top while scrolling. */
+.mobile-menu-bar { display: none; }
+@media (max-width: 850px) {
+  .site-header { border-bottom: 0; }
+  .mobile-menu-bar {
+    display: flex; align-items: flex-start; justify-content: flex-start;
+    position: sticky; top: 0; z-index: 1000;
+    width: 100%; background: #fff;
+    border-bottom: 3px solid #daa520;
+  }
+  .mobile-menu-bar > .mobile-nav {
+    display: block; position: relative; flex: none;
+    width: auto; max-width: 100%; margin: 0; padding: 0;
+  }
+  .mobile-menu-bar > .mobile-nav > summary {
+    display: inline-block; cursor: pointer; list-style: none;
+    padding: 13px 20px; border-radius: 0;
+    background: #daa520; color: #fff; font-weight: 700;
+  }
+  .mobile-menu-bar > .mobile-nav > summary::-webkit-details-marker { display: none; }
+  .mobile-menu-bar > .mobile-nav > nav {
+    position: absolute; top: 100%; left: 0; right: auto;
+    display: flex; flex-direction: column;
+    width: min(240px, 100vw); min-width: 0;
+    background: #daa520; border: 0;
+    box-shadow: 0 8px 16px #0003;
+  }
+  .mobile-menu-bar > .mobile-nav > nav a {
+    display: block; box-sizing: border-box; width: 100%;
+    padding: 13px 18px; color: #fff; background: #daa520;
+    text-decoration: none; text-transform: uppercase;
+    white-space: normal; overflow-wrap: break-word;
+  }
+  .mobile-menu-bar > .mobile-nav > nav a:hover,
+  .mobile-menu-bar > .mobile-nav > nav a:focus-visible,
+  .mobile-menu-bar > .mobile-nav > nav a[aria-current="page"] {
+    background: #800020; color: #fff;
+  }
+}
